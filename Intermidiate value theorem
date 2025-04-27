@@ -1,0 +1,19 @@
+Intermidiate value theorem
+
+Input :
+Print(“intermediate value theorem”)
+Def f(x):
+ Return(x**3-9*x**2+1)
+A=float(input(“enter the value of interval a=”))
+B=float(input(“enter the value of interval b=”))
+If(f(a)*f(b)<0):
+ Print(“root is present interval”)
+Else:
+ Print(“root is not between these two interval”)
+
+Output:
+Intermediate value theorem
+Enter the value of interval a=3
+Enter the value of interval b=2
+Root is not between these two interval
+>>>
