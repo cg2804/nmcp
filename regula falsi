@@ -1,0 +1,36 @@
+input:-
+def f(x):
+    return(x**4-1)
+a=float(input("enter the first guess="))
+b=float(input("enter the second guess="))
+n=int(input("enter the no. of iterations="))
+c=(a*f(b)-b*f(a))/f(b)-f(a)
+i=0
+if(f(a)*f(b)<0):
+ while(i<n):
+    if(f(a)*f(c)<0):
+        b=c
+    else:
+         a=c
+         c=(a*f(b)-b*f(a))/f(b)-f(a)
+         i=i+1
+         print(f"for{i}iteration root is{round(c,4)}")
+else:
+    print("given guess value not lies in the bracket of the root")
+    print("try again with different guess value")
+ 
+
+
+
+
+
+
+
+  output :- 
+   
+enter the first guess=0
+enter the second guess=2
+enter the no. of iterations=3
+for1iteration root is0.2422
+for2iteration root is0.3517
+for3iteration root is0.4532
