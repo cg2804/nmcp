@@ -1,0 +1,43 @@
+INPUT: 
+def f(x):
+      return(x**4-1)
+a=float(input("enter the first guess="))
+b=float(input("enter the second guess="))
+n=int(input("enter the no.of iteration ="))
+c=(a+b)/2
+i=0
+if(f(a)*f(b)<0):
+    while(i<n):
+     if(f(a)*f(c)<0):
+            b=c
+     else:
+             a=c
+             c=(a+b)/2
+             i=i+1
+             print(f"for{i}iteration root is {round(c,4)}")
+else:
+             print("given guess value not liseint the bracket of the not")
+             print("try again with different guess value")
+
+
+
+OUTPUT:
+Python 3.7.5 (tags/v3.7.5:5c02a39a0b, Oct 15 2019, 00:11:34) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+=== RESTART: C:\Users\hp\AppData\Local\Programs\Python\Python37\atharva..py ===
+enter the first guess=0
+enter the second guess=2
+enter the no.of iteration =10
+for1iteration root is 1.5
+for2iteration root is 1.75
+for3iteration root is 1.875
+for4iteration root is 1.9375
+for5iteration root is 1.9688
+for6iteration root is 1.9844
+for7iteration root is 1.9922
+for8iteration root is 1.9961
+for9iteration root is 1.998
+for10iteration root is 1.999
+>>>
+
