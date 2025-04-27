@@ -1,0 +1,31 @@
+Transposition of Two Dimentional Matrix
+Input
+print("Transposition of Two Dimentional Matrix")
+a=[[1,4],[3,7]]
+print("Two dimentional matrix A=")
+print(a[0])
+print(a[1])
+b2=a[0][1]
+a[0][1]=a[1][0]
+a[1][0]=b2
+print("Transpose of two dimentional Matrix A=")
+print(a[0])
+print(a[1])
+
+
+
+•	output:
+>>>
+
+
+Two dimentional matrix A
+
+[1, 4]
+[2,7]
+
+Transpose of two dimentional Matrix A
+
+[1, 3]
+[4,7]
+>>>
+
