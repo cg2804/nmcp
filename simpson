@@ -1,0 +1,15 @@
+def f(x):
+ return 1 / (1 + x ** 2)
+n = int(input("Enter the number of intervals: "))
+x0 = float(input("Enter the value of lower limit: "))
+xn = float(input("Enter the value of upper limit: "))
+h = (xn - x0) / n
+sum_ = f(x0) + f(xn)
+for i in range(1, n):
+ k = x0 + i * h
+ if i % 2 == 0:
+ sum_ += 2 * f(k)
+ else:
+ sum_ += 4 * f(k)
+y = (h / 3) * sum_
+print("Integration result by Simpson's 1/3 method is = %0.4f" % y)
