@@ -1,0 +1,47 @@
+Input:-
+def f(X):
+    return X**4+X**3+5*X**2+4*X+1
+p0=float(input("Enter Value of Initial Aprrox.root p0="))
+a0=float(input("Enter value of a0="))
+a1=float(input("Enter value of a1="))
+a2=float(input("Enter value of a2="))
+a3=float(input("Enter value of a3="))
+a4=float(input("Enter value of a4="))
+i=int(input("Enter no of iteration+"))
+count=1
+while(count<=i):
+    b0=a0
+    b1=a1+p0*b0
+    b2=a2+p0*b1
+    b3=a3+p0*b2
+    b4=a4+p0*b3
+    c0=b0
+    c1=b1+p0*c0
+    c2=b2+p0*c1
+    c3=b3+p0*c2
+    p1=p0-(b4/c3)
+    print("for Iteration=",count)
+    print("New root is=",p1)
+    p0=p1
+    count=count+1
+
+
+
+
+Output:-
+Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 16:30:00) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> 
+============================================ RESTART: C:/Users/hp/OneDrive/atharva/birge vieta method.py ============================================
+Enter Value of Initial Aprrox.root p0=1
+Enter value of a0=1
+Enter value of a1=1
+Enter value of a2=5
+Enter value of a3=4
+Enter value of a4=1
+Enter no of iteration+2
+for Iteration= 1
+New root is= 0.4285714285714286
+for Iteration= 2
+New root is= 0.01934191962863524
+>>>
